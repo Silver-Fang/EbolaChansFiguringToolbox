@@ -79,18 +79,21 @@ Xs=linspace(0,1,10);
 FillStyle={"r","FaceAlpha",0.1,"LineStyle","none"};
 %图线为虚线
 PlotStyle={"--"};
-ShadowedLine(Mean,Error,Xs,"ShadowStyle",FillStyle,"LineStyle",PlotStyle);
+ShadowedLine(Mean,Error,Xs=Xs,ShadowStyle=FillStyle,LineStyle=PlotStyle);
 ```
-## 必需参数
-LineYs(1,:)，平均值折线Y值，将用plot函数作出
+![](ShadowedLine.svg)
+## 位置参数
+LineYs(1,:)，必需，平均值折线Y值，将用plot函数作出
 
-ShadowHeights(1,:)，误差范围阴影高度，将用fill函数作出
-## 可选参数
-Xs(1,:)=1:numel(LineYs)，X轴对应数值向量
+ShadowHeights(1,:)，可选，误差范围阴影高度，将用fill函数作出
 ## 名称-值对组参数
+Xs(1,:)=1:numel(LineYs)，X轴对应数值向量
+
 LineStyle(1,:)cell={'k'}，均值折线的样式，将传递给plot函数实现
 
 ShadowStyle(1,:)cell={"k","FaceAlpha",0.2,"LineStyle","none"}，误差阴影的样式，将传递给fill函数实现
+
+Ax(1,1)matlab.graphics.axis.Axes=gca，作图的坐标区，默认当前坐标区
 ## 参数互限
 LineYs ShadowHeights Xs，这三个向量应当具有相同的长度
 ## 返回值
