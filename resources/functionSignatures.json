@@ -1,0 +1,176 @@
+{
+	"ColorAllocate": {
+		"inputs": [
+			{
+				"name": "NoColors",
+				"kind": "required",
+				"type": "positive",
+				"purpose": "要分配的颜色个数"
+			},
+			{
+				"name": "TryCount",
+				"kind": "ordered",
+				"type": "positive",
+				"purpose": "尝试优化的次数"
+			}
+		],
+		"outputs": [
+			{
+				"name": "Colors",
+				"type": [
+					"size=:,3"
+				]
+			}
+		]
+	},
+	"FigureAspectRatio": {
+		"inputs": [
+			{
+				"name": "HorizontalProportion",
+				"kind": "required",
+				"type": "positive",
+				"purpose": "宽度比值。例如如果你希望图窗为4:3，则此值给4"
+			},
+			{
+				"name": "VerticalProportion",
+				"kind": "required",
+				"type": "positive",
+				"purpose": "高度比值。例如如果你希望图窗为4:3，则此值给3"
+			},
+			{
+				"mutuallyExclusiveGroup": [
+					[
+						{
+							"name": "ScaleFactor",
+							"kind": "ordered",
+							"type": "positive",
+							"purpose": "缩放倍率"
+						}
+					],
+					[
+						{
+							"name": "ScaleMode",
+							"kind": "ordered",
+							"type": "choices={'Amplify','Narrow'}",
+							"purpose": "缩放模式"
+						}
+					]
+				]
+			},
+			{
+				"name": "Fig",
+				"kind": "namevalue",
+				"type": [
+					"scalar",
+					"matlab.ui.Figure"
+				],
+				"purpose": "图窗对象。如果指定该参数，将对指定的图窗进行操作，而不一定是当前图窗"
+			}
+		],
+		"outputs": [
+			{
+				"name": "Fig",
+				"type": [
+					"scalar",
+					"matlab.ui.Figure"
+				]
+			}
+		]
+	},
+	"ShadowedLine": {
+		"inputs": [
+			{
+				"name": "LineYs",
+				"kind": "required",
+				"type": [
+					"row",
+					"numeric"
+				],
+				"purpose": "平均值折线Y值，将用plot函数作出"
+			},
+			{
+				"name": "ShadowHeights",
+				"kind": "ordered",
+				"type": [
+					"row",
+					"numeric"
+				],
+				"purpose": "误差范围阴影高度，将用fill函数作出"
+			},
+			{
+				"name": "Xs",
+				"kind": "namevalue",
+				"type": [
+					"row",
+					"numeric"
+				],
+				"purpose": "X轴对应数值向量"
+			},
+			{
+				"name": "LineStyle",
+				"kind": "namevalue",
+				"type": [
+					"row",
+					"cell"
+				],
+				"purpose": "均值折线的样式，将传递给plot函数实现"
+			},
+			{
+				"name": "ShadowStyle",
+				"kind": "namevalue",
+				"type": [
+					"row",
+					"cell"
+				],
+				"purpose": "误差阴影的样式，将传递给fill函数实现"
+			},
+			{
+				"name":"Ax",
+				"kind":"namevalue",
+				"type":[
+					"scalar",
+					"matlab.graphics.axis.Axes"
+				],
+				"purpose":"作图的坐标区"
+			}
+		],
+		"outputs": [
+			{
+				"name": "Line",
+				"type": [
+					"scalar",
+					"matlab.graphics.chart.primitive.Line"
+				]
+			},
+			{
+				"name": "Shadow",
+				"type": [
+					"scalar",
+					"matlab.graphics.primitive.Patch"
+				]
+			}
+		]
+	},
+	"StripBackground":{
+		"inputs":[
+			{
+				"name":"InputPath",
+				"kind":"namevalue",
+				"type":"file=*.jpg,*.png",
+				"purpose":"输入图像路径"
+			},
+			{
+				"name":"BackgroundColor",
+				"kind":"namevalue",
+				"type":["size=1,1,3","numeric"],
+				"purpose":"背景色"
+			},
+			{
+				"name":"OutputPath",
+				"kind":"namevalue",
+				"type":["string","scalar"],
+				"purpose":"输出图像路径"
+			}
+		]
+	}
+}
