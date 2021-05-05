@@ -1,4 +1,6 @@
-埃博拉酱的MATLAB作图工具包，包含一系列实用的作图工具
+埃博拉酱的MATLAB作图工具包，包含一系列实用的作图工具。依赖[埃博拉酱的Windows工具](https://github.com/Silver-Fang/EbolaChansWindowsTools)
+
+本项目的发布版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)规范。开发者认为这是一个优秀的规范，并向每一位开发者推荐遵守此规范。
 # ColorAllocate
 为白色背景下的作图分配合适的颜色
 
@@ -95,3 +97,21 @@ LineYs ShadowHeights Xs，这三个向量应当具有相同的长度
 Line(1,1)matlab.graphics.chart.primitive.Line，平均线，plot函数返回的图线对象
 
 Shadow(1,1)matlab.graphics.primitive.Patch，误差阴影，fill函数返回的填充对象
+# StripBackground
+将指定图像文件中指定的颜色视为背景，去除之
+
+本函数将指定路径中的图片文件，去除周围指定颜色的背景；内部的背景像素全部设为完全透明，然后保存到指定的PNG文件
+```MATLAB
+%选择一张图片，去除黑色背景，保存到选定的位置
+StripBackground(BackgroundColor=cat(3,0,0,0));
+%将指定的图片去除白色背景
+StripBackground(InputPath="StripBackgroundBefore.png",OutputPath="StripBackgroundAfter.png");
+```
+![](StripBackgroundBefore.png)![](StripBackgroundAfter.png)
+两张图看似一致，实际上右图四周的白边都被裁掉了，而且所有白色像素也变成了全透明，放在黑色背景下就能看出来了。
+## 名称值参数
+InputPath(1,1)string，输入图像路径，默认打开文件选择对话框供用户手动选择。仅支持PNG或JPG图像。
+
+BackgroundColor(1,1,3)uint8，背景色，默认白色。
+
+OutputPath(1,1)string，输出图像路径，默认打开保存选择对话框供用户手动选择。仅支持PNG图像。

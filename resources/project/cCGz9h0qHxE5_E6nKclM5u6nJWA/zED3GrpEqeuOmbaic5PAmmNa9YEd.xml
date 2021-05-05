@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info>
+    <MetadataNode>
+        <path value="ProjectData:type:Info">
+            <node name="Info">
+                <entry value="埃博拉酱的Windows工具" key="Name" />
+            </node>
+        </path>
+        <path value="Root:type:Categories">
+            <path value="FileClassCategory:type:Category">
+                <node name="Info">
+                    <entry value="None" key="DataType" />
+                    <entry value="分类" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="artifact:type:Label">
+                    <node name="Info">
+                        <entry value="工件" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="convenience:type:Label">
+                    <node name="Info">
+                        <entry value="便利" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="derived:type:Label">
+                    <node name="Info">
+                        <entry value="派生" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="design:type:Label">
+                    <node name="Info">
+                        <entry value="设计" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="none:type:Label">
+                    <node name="Info">
+                        <entry value="无" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="other:type:Label">
+                    <node name="Info">
+                        <entry value="其他" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="test:type:Label">
+                    <node name="Info">
+                        <entry value="测试" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:EntryPoints" />
+        <path value="Root:type:Extensions" />
+        <path value="Root:type:Files">
+            <path value=".gitattributes:type:File">
+                <node name="Info" />
+            </path>
+            <path value=".gitignore:type:File">
+                <node name="Info" />
+            </path>
+            <path value="MmfSemaphore.m:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="design" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+            </path>
+            <path value="OpenFileDialog.mlx:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="design" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+            </path>
+            <path value="README.md:type:File">
+                <node name="Info" />
+            </path>
+            <path value="SaveFileDialog.mlx:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="design" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:ProjectData" />
+        <path value="Root:type:ProjectPath">
+            <path value="59017e72-8721-4d65-b982-3b57029b225a:type:Reference">
+                <node name="Info">
+                    <entry value="" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+    </MetadataNode>
+    <Files>
+        <File path=".gitattributes" value="fd4bbba8" />
+        <File path=".gitignore" value="f1d6875d" />
+        <File path="MmfSemaphore.m" value="4676d41b" />
+        <File path="OpenFileDialog.mlx" value="ac160418" />
+        <File path="README.md" value="73488b79" />
+        <File path="SaveFileDialog.mlx" value="e10ae0f3" />
+        <File path="resources/functionSignatures.json" value="31d238f1" />
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/g5-I8Omfj0kPWRorEjDqaKn9Y-sd.xml" value="23431c7a" />
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/g5-I8Omfj0kPWRorEjDqaKn9Y-sp.xml" value="2d237cbe" />
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA" value="-1" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/2kj09UetkV_lru3gvSPXnY6-nM4d.xml" value="1c651c1a" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/2kj09UetkV_lru3gvSPXnY6-nM4p.xml" value="7b002da4" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/KKyDJtbdIBOlaeHmIZd5VX6vqx8d.xml" value="dfec714e" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/KKyDJtbdIBOlaeHmIZd5VX6vqx8p.xml" value="4cce81bc" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/QWNDYJD5mGW1bWYvPx9DtKnxzw4d.xml" value="84ed0eb4" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/QWNDYJD5mGW1bWYvPx9DtKnxzw4p.xml" value="69a90595" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/R1RggVhA72agIvELiuhWPRS8F0Id.xml" value="ce18464" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/R1RggVhA72agIvELiuhWPRS8F0Ip.xml" value="435fd6b1" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/aEHSZBIY-yve10yGis12Zr5DLZod.xml" value="1476ca66" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/aEHSZBIY-yve10yGis12Zr5DLZop.xml" value="9ee37d25" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/j4xwF_j8iFTVayUMfxLgMnTbencd.xml" value="7ee960ff" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/j4xwF_j8iFTVayUMfxLgMnTbencp.xml" value="a55c6f90" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/r8LR4nLmg9ai3oHrW1r_-KocQzkd.xml" value="ecde80d6" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/r8LR4nLmg9ai3oHrW1r_-KocQzkp.xml" value="81b62498" />
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs" value="-1" />
+        <File path="resources/project/Project.xml" value="afc53f38" />
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k/NjSPEMsIuLUyIpr2u1Js5bVPsOsd.xml" value="9d8c7e6a" />
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k/NjSPEMsIuLUyIpr2u1Js5bVPsOsp.xml" value="24933817" />
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k" value="-1" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/DFoJ-nBi6JIq7Cp5iJelEa__CrAd.xml" value="df0217e1" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/DFoJ-nBi6JIq7Cp5iJelEa__CrAp.xml" value="39426070" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/Dh2acV1c2G0_ksIONU9986ugeZQd.xml" value="df0217e1" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/Dh2acV1c2G0_ksIONU9986ugeZQp.xml" value="61146a85" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/KtqmMijnhPcntEuti7aVpZABZXsd.xml" value="df0217e1" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/KtqmMijnhPcntEuti7aVpZABZXsp.xml" value="76a032e3" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/QMJD9OLFzxcTTbPOoh-ahQ4zTRUd.xml" value="3af507e" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/QMJD9OLFzxcTTbPOoh-ahQ4zTRUp.xml" value="b9adc48b" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/TMK4UzWHdRLhy_w-CHt9y11Q8XAd.xml" value="3af507e" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/TMK4UzWHdRLhy_w-CHt9y11Q8XAp.xml" value="3cd93c5b" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/qD-kr16wmwlzR-nIg1IG_vvRrWkd.xml" value="3af507e" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/qD-kr16wmwlzR-nIg1IG_vvRrWkp.xml" value="815cc74a" />
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ" value="-1" />
+        <File path="resources/project/root/6x1BhZX_fLnKpcwqra0qFwv1jIgp.xml" value="2b03b801" />
+        <File path="resources/project/root/EEtUlUb-dLAdf0KpMVivaUlztwAp.xml" value="eea8f21b" />
+        <File path="resources/project/root/GiiBklLgTxteCEmomM8RCvWT0nQd.xml" value="19db6467" />
+        <File path="resources/project/root/GiiBklLgTxteCEmomM8RCvWT0nQp.xml" value="c92de2c0" />
+        <File path="resources/project/root/KAXfQgCar2Yb8zOxgvf9hdmLP1Ep.xml" value="fe97d152" />
+        <File path="resources/project/root/NmGqIpAwUJcXFyLjFAGnU9uyN5Yp.xml" value="1b49afbb" />
+        <File path="resources/project/root/fjRQtWiSIy7hIlj-Kmk87M7s21kp.xml" value="7e742dae" />
+        <File path="resources/project/root/qaw0eS1zuuY1ar9TdPn1GMfrjbQp.xml" value="4a2f6ccc" />
+        <File path="resources/project/rootp.xml" value="3af507e" />
+        <File path="resources/project/root" value="-1" />
+        <File path="resources/project/uuid-8f3f0016-8b70-48b2-b9d4-cef54c7fb091.xml" value="3af507e" />
+        <File path="resources/project" value="-1" />
+        <File path="resources" value="-1" />
+        <File path="埃博拉酱的Windows工具.prj" value="fe84b66d" />
+    </Files>
+    <Date value="2021年5月5日 15:10:55" />
+</Info>
