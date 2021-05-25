@@ -57,6 +57,30 @@ Scale=1，缩放倍率或模式。
 Fig(1,1)matlab.ui.Figure=gcf，图窗对象。如果指定该参数，将对指定的图窗进行操作，而不一定是当前图窗。
 ## 返回值
 Fig(1,1)matlab.ui.Figure，如果制定了Fig参数，则返回该参数；否则返回当前图窗对象。
+# LegendMultiShadowedLines
+带图例的多条误差阴影线图
+## 位置参数
+MeanLines，必需，所有均值线。如果是数值矩阵，第1维是不同的对比组，第2维是Trial；如果是元胞列向量，则每个元胞里是一条均值线行向量。
+
+ErrorShadows，可选，对应均值线的误差阴影高度。如果是数值矩阵，第1维是不同的对比组，第2维是Trial；如果是元胞列向量，则每个元胞里是一条误差高度行向量。
+## 名称-值对组参数
+Legends(:,1)string，每条线的图例文本，默认不显示图例
+
+LineStyles(:,1)cell，每条线的样式。每个元胞里应当是一个元胞数组，包含将要传递给plot的其它参数。默认自动分配高对比颜色。
+
+ShadowStyles(:,1)cell，每块误差阴影的样式。每个元胞里应当是一个元胞数组，包含将要传递给fill的其它参数。默认自动分20%Alpha的默认图线颜色
+
+LegendStyle(1,:)cell，图例的样式，包含将要传递给legend的其它参数。
+## 返回值
+Lines(:,1)matlab.graphics.chart.primitive.Line，平均线，plot函数返回的图线对象
+
+Shadows(:,1)matlab.graphics.primitive.Patch，误差阴影，fill函数返回的填充对象
+
+Legends(1,1)matlab.graphics.illustration.Legend，图例，legend函数返回的图例对象
+
+Ax(1,1)matlab.graphics.axis.Axes，要绘图的坐标区，默认gca。
+
+Xs(1,:)，X轴数值，默认为数值的序号。
 # ShadowedLine
 将平均值±误差曲线，通过中间一条均线、两边误差边界阴影的形式作图出来。
 ```MATLAB
