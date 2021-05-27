@@ -1,6 +1,12 @@
 埃博拉酱的MATLAB作图工具包，包含一系列实用的作图工具。依赖[埃博拉酱的Windows工具](https://github.com/Silver-Fang/EbolaChansWindowsTools)和[埃博拉酱的函数助手](https://github.com/Silver-Fang/EbolaChansFunctionHelpers)
 
 本项目的发布版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)规范。开发者认为这是一个优秀的规范，并向每一位开发者推荐遵守此规范。
+# 目录
+- [ColorAllocate](#ColorAllocate) 为白色背景下的作图分配合适的颜色
+- [FigureAspectRatio](#FigureAspectRatio) 设置当前图窗的纵横比
+- [LegendMultiShadowedLines](#LegendMultiShadowedLines) 带图例的多条误差阴影线图
+- [ShadowedLine](ShadowedLine) 将平均值±误差曲线，通过中间一条均线、两边误差边界阴影的形式作图出来。
+- [StripBackground](StripBackground) 将指定图像文件中指定的颜色视为背景，去除之
 # ColorAllocate
 为白色背景下的作图分配合适的颜色
 
