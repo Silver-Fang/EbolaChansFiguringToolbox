@@ -1,4 +1,4 @@
-埃博拉酱的MATLAB作图工具包，包含一系列实用的作图工具。依赖[埃博拉酱的Windows工具](https://github.com/Silver-Fang/EbolaChansWindowsTools)
+埃博拉酱的MATLAB作图工具包，包含一系列实用的作图工具。依赖[埃博拉酱的Windows工具](https://github.com/Silver-Fang/EbolaChansWindowsTools)和[埃博拉酱的函数助手](https://github.com/Silver-Fang/EbolaChansFunctionHelpers)
 
 本项目的发布版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)规范。开发者认为这是一个优秀的规范，并向每一位开发者推荐遵守此规范。
 # ColorAllocate
