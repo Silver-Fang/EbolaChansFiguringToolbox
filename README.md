@@ -59,6 +59,33 @@ Fig(1,1)matlab.ui.Figure=gcf，图窗对象。如果指定该参数，将对指�
 Fig(1,1)matlab.ui.Figure，如果制定了Fig参数，则返回该参数；否则返回当前图窗对象。
 # LegendMultiShadowedLines
 带图例的多条误差阴影线图
+```MATLAB
+load("LMSL示例数据.mat");
+figure;
+FigureAspectRatio(3,2,"Narrow");
+TL=tiledlayout('flow','TileSpacing','tight','Padding','tight');
+NoCells=size(Mean,3);
+NoSamples=width(Sem);
+Xs=(1:NoSamples)/30-1;
+Axes=cell(NoCells,1);
+for C=1:NoCells
+	Axes{C}=nexttile;
+	Lines=LegendMultiShadowedLines(Mean(:,:,C),Sem(:,:,C),"Xs",Xs);
+end
+Legend=legend(Lines,Experiments);
+Legend.Layout.Tile=NoCells+1;
+title(TL,"PV average activity curve per day for individual neurons");
+xlabel(TL,"Time from stimulus (s)");
+ylabel(TL,"ΔF/F_0");
+YLim=cell2mat(cellfun(@ylim,Axes,"UniformOutput",false));
+YLim=[min(YLim(:,1)) max(YLim(:,2))];
+for C=1:NoCells
+	Ax=Axes{C};
+	ylim(Ax,YLim);
+	Ax.YTickLabels=round(2.^str2double(Ax.YTickLabels)-1,1,"significant");
+end
+```
+![](LMSL示例图.svg)
 ## 位置参数
 MeanLines，必需，所有均值线。如果是数值矩阵，第1维是不同的对比组，第2维是Trial；如果是元胞列向量，则每个元胞里是一条均值线行向量。
 
