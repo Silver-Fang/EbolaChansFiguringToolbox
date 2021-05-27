@@ -126,16 +126,22 @@
 				"purpose": "图例的样式，包含将要传递给legend的其它参数"
 			},
 			{
-				"name":"Ax",
-				"kind":"namevalue",
-				"type":["scalar","matlab.graphics.axis.Axes"],
-				"purpose":"要绘图的坐标区，默认gca。"
+				"name": "Ax",
+				"kind": "namevalue",
+				"type": [
+					"scalar",
+					"matlab.graphics.axis.Axes"
+				],
+				"purpose": "要绘图的坐标区，默认gca。"
 			},
 			{
-				"name":"Xs",
-				"kind":"namevalue",
-				"type":["vector","numeric"],
-				"purpose":"X轴数值，默认为数值的序号"
+				"name": "Xs",
+				"kind": "namevalue",
+				"type": [
+					"vector",
+					"numeric"
+				],
+				"purpose": "X轴数值，默认为数值的序号"
 			}
 		],
 		"outputs": [
@@ -210,13 +216,13 @@
 				"purpose": "误差阴影的样式，将传递给fill函数实现"
 			},
 			{
-				"name":"Ax",
-				"kind":"namevalue",
-				"type":[
+				"name": "Ax",
+				"kind": "namevalue",
+				"type": [
 					"scalar",
 					"matlab.graphics.axis.Axes"
 				],
-				"purpose":"作图的坐标区"
+				"purpose": "作图的坐标区"
 			}
 		],
 		"outputs": [
@@ -236,25 +242,50 @@
 			}
 		]
 	},
-	"StripBackground":{
-		"inputs":[
+	"StripBackground": {
+		"inputs": [
 			{
-				"name":"InputPath",
-				"kind":"namevalue",
-				"type":"file=*.jpg,*.png",
-				"purpose":"输入图像路径"
+				"name": "InputPath",
+				"kind": "namevalue",
+				"type": "file=*.jpg,*.png",
+				"purpose": "输入图像路径"
 			},
 			{
-				"name":"BackgroundColor",
-				"kind":"namevalue",
-				"type":["size=1,1,3","numeric"],
-				"purpose":"背景色"
+				"name": "BackgroundColor",
+				"kind": "namevalue",
+				"type": [
+					"size=1,1,3",
+					"numeric"
+				],
+				"purpose": "背景色"
 			},
 			{
-				"name":"OutputPath",
-				"kind":"namevalue",
-				"type":["string","scalar"],
-				"purpose":"输出图像路径"
+				"name": "OutputPath",
+				"kind": "namevalue",
+				"type": [
+					"string",
+					"scalar"
+				],
+				"purpose": "输出图像路径"
+			}
+		]
+	},
+	"UnifyAxes": {
+		"inputs": [
+			{
+				"name": "Axes",
+				"kind": "required",
+				"type": "matlab.graphics.axis.Axes",
+				"purpose": "所有要统一的坐标轴"
+			}
+		],
+		"outputs": [
+			{
+				"name": "YLim",
+				"type": [
+					"size=1,2",
+					"double"
+				]
 			}
 		]
 	}

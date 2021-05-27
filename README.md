@@ -175,3 +175,21 @@ InputPath(1,1)string，输入图像路径，默认打开文件选择对话框供
 BackgroundColor(1,1,3)uint8，背景色，默认白色。
 
 OutputPath(1,1)string，输出图像路径，默认打开保存选择对话框供用户手动选择。仅支持PNG图像。
+# UnifyAxes
+将所有坐标的纵轴统一到最大的范围中
+```MATLAB
+Data=rand(10,1);
+tiledlayout("flow",TileSpacing="tight",Padding="tight");
+Axes=cell(3,1);
+Axes{1}=nexttile;
+plot(Data);
+Axes{2}=nexttile;
+plot(Data*2);
+Axes{3}=nexttile;
+plot(Data*3);
+YLim=UnifyAxes(vertcat(Axes{:}))
+%可见所有子图坐标一致，尽管数据范围大小有别
+```
+输入参数：Axes(:,1)matlab.graphics.axis.Axes，所有要统一的坐标轴
+
+返回值：YLim(1,2)double，最终统一到的坐标下限和上限
