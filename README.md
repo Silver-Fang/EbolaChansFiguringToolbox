@@ -2,6 +2,10 @@
 
 本项目的发布版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)规范。开发者认为这是一个优秀的规范，并向每一位开发者推荐遵守此规范。
 # 目录
+本包中所有函数均在EbolaChan.FiguringToolbox命名空间下，使用前需import。使用命名空间是一个好习惯，可以有效防止命名冲突，避免编码时不必要的代码提示干扰。
+```MATLAB
+import EbolaChan.FiguringToolbox.*;
+```
 - [ColorAllocate](#ColorAllocate) 为白色背景下的作图分配合适的颜色
 - [FigureAspectRatio](#FigureAspectRatio) 设置当前图窗的纵横比
 - [LegendMultiShadowedLines](#LegendMultiShadowedLines) 带图例的多条误差阴影线图

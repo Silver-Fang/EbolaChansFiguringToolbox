@@ -1,5 +1,5 @@
 {
-	"ColorAllocate": {
+	"EbolaChan.FiguringToolbox.ColorAllocate": {
 		"inputs": [
 			{
 				"name": "NoColors",
@@ -23,7 +23,7 @@
 			}
 		]
 	},
-	"FigureAspectRatio": {
+	"EbolaChan.FiguringToolbox.FigureAspectRatio": {
 		"inputs": [
 			{
 				"name": "HorizontalProportion",
@@ -77,7 +77,7 @@
 			}
 		]
 	},
-	"LegendMultiShadowedLines": {
+	"EbolaChan.FiguringToolbox.LegendMultiShadowedLines": {
 		"inputs": [
 			{
 				"name": "MeanLines",
@@ -168,7 +168,7 @@
 			}
 		]
 	},
-	"ShadowedLine": {
+	"EbolaChan.FiguringToolbox.ShadowedLine": {
 		"inputs": [
 			{
 				"name": "LineYs",
@@ -242,7 +242,7 @@
 			}
 		]
 	},
-	"StripBackground": {
+	"EbolaChan.FiguringToolbox.StripBackground": {
 		"inputs": [
 			{
 				"name": "InputPath",
@@ -270,7 +270,7 @@
 			}
 		]
 	},
-	"UnifyAxes": {
+	"EbolaChan.FiguringToolbox.UnifyAxes": {
 		"inputs": [
 			{
 				"name": "Axes",
